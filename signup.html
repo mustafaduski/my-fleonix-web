@@ -52,3 +52,15 @@
 
 </body>
 </html>
+<script>
+    // ئەمە فەنکشنێکە کە کاتێک کلیک دەکرێت کار دەکات
+    function createAccount(event) {
+        event.preventDefault(); // ڕێگری دەکات لەوەی لاپەڕەکە نوێ (Refresh) بێتەوە
+        
+        alert("دەستخۆش! داواکارییەکەت نێردرا. بەم زووانە پەیوەندیت پێوە دەکەین.");
+    }
+
+    // بەستنەوەی فەنکشنەکە بە دوگمەکەوە
+    const myButton = document.querySelector('button');
+    myButton.addEventListener('click', createAccount);
+</script>
